@@ -1,0 +1,17 @@
+{
+	"name" : "Poseidon",
+	"monsters": [
+		{
+			"name": "Poseidon",
+			"requiredStats" : [
+				{"type": "SPD", "value": 180},
+				{"type": "ACC", "value": 75}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1}
+			],
+			"requiredSets": [{"type": "DESPAIR", "value": 4}],
+			"brokenSet": true
+		}
+	]
+}

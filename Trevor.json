@@ -1,0 +1,18 @@
+{
+	name : "Trevor",
+	monsters: [
+		{
+			name: "Trevor",
+			requiredStats : [
+				{type: HP, value: 12000},
+				{type: ACC, value: 40}
+			],
+			evalStats : [
+				{type: HP, value: 1},
+				{type: SPD, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		}
+	]
+}

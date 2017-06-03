@@ -1,0 +1,20 @@
+{
+	"name" : "Akhamamir",
+	"monsters": [
+		{
+			"name": "Akhamamir",
+			"requiredStats" : [
+				{"type": "HP", "value": 14000},
+				{"type": "SPD", "value": 150},
+				{"type": "ATK", "value": 1600},
+				{"type": "CRATE", "value": 80},
+				{"type": "CDMG", "value": 100}
+			],
+			"evalStats" : [
+				{"type": "CDMG", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		}
+	]
+}

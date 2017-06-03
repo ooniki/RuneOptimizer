@@ -1,0 +1,74 @@
+{
+	"name" : "Dragon",
+	"monsters": [
+		{
+			"name": "Belladeon",
+			"requiredStats" : [
+				{"type": "HP", "value": 22000},
+				{"type": "SPD", "value": 150},
+				{"type": "ACC", "value": 55}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "SPD", "value": 1}
+			],
+			"requiredSets": [{"type": "VIOLENT", "value": 4}],
+			"brokenSet": true
+		},
+		{
+			"name": "Vigor",
+			"requiredStats" : [
+				{"type": "HP", "value": 25000},
+				{"type": "SPD", "value": 180},
+				{"type": "CRATE", "value": 70}
+			],
+			"evalStats" : [
+				{"type": "CDMG", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		},
+		{
+			"name": "Spectra",
+			"requiredStats" : [
+				{"type": "HP", "value": 20000},
+				{"type": "SPD", "value": 180},
+				{"type": "ACC", "value": 60}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "SPD", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		},
+		{
+			"name": "Megan",
+			"requiredStats" : [
+				{"type": "HP", "value": 20000},
+				{"type": "SPD", "value": 180},
+				{"type": "ACC", "value": 60}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "SPD", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		},
+		{
+			"name": "Veromos",
+			"requiredStats" : [
+				{"type": "HP", "value": 22000},
+				{"type": "SPD", "value": 180},
+				{"type": "ACC", "value": 60}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "SPD", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		}
+	]
+}

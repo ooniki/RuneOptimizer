@@ -1,0 +1,20 @@
+{
+	name : "Raoq",
+	monsters: [
+		{
+			name: "Raoq",
+			requiredStats : [
+				{type: HP, value: 12000},
+				{type: SPD, value: 145},
+				{type: CRATE, value: 70}
+			],
+			evalStats : [
+				{type: ATK, value: 1},
+				{type: CRATE, value: 1},
+				{type: CDMG, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		}
+	]
+}

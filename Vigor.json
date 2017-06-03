@@ -1,0 +1,19 @@
+{
+	"name" : "Vigor",
+	"monsters": [
+		{
+			"name": "Vigor",
+			"requiredStats" : [
+				{"type": "HP", "value": 20000},
+				{"type": "SPD", "value": 180}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "CRATE", "value": 1},
+				{"type": "CDMG", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		}
+	]
+}

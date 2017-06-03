@@ -1,0 +1,17 @@
+{
+	"name" : "Kumar",
+	"monsters": [
+		{
+			"name": "Kumar",
+			"requiredStats" : [
+				{"type": "HP", "value": 30000}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "SPD", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		}
+	]
+}

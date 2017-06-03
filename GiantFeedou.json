@@ -1,0 +1,55 @@
+{
+	"name" : "GiantFeedou",
+	"monsters": [
+		{
+			"name": "Lushen",
+			"requiredStats" : [
+				{"type": "ATK", "value": 2300},
+				{"type": "HP", "value": 14000},
+				{"type": "SPD", "value": 135},
+				{"type": "CRATE", "value": 70},
+				{"type": "CDMG", "value": 120}
+			],
+			"evalStats" : [
+				{"type": "SPD", "value": 1},
+				{"type": "CDMG", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		},
+		{
+			"name": "Hraesvelg",
+			"requiredStats" : [
+				{"type": "ATK", "value": 1500},
+				{"type": "HP", "value": 15000},
+				{"type": "SPD", "value": 133},
+				{"type": "ACC", "value": 38},
+				{"type": "CRATE", "value": 70}
+			],
+			"evalStats" : [
+				
+				{"type": "CDMG", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		},
+		
+		{
+			"name": "Bernard",
+			"requiredStats" : [
+				{"type": "HP", "value": 15000},
+				{"type": "SPD", "value": 150},
+				{"type": "ACC", "value": 50}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "SPD", "value": 1}
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		}
+		
+		
+		
+	]
+}

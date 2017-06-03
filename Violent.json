@@ -1,0 +1,18 @@
+{
+	"name" : "Violent",
+	"monsters": [
+		{
+			"name": "Veromos",
+			"requiredStats" : [
+				{"type": "HP", "value": 24000},
+				{"type": "SPD", "value": 130},
+				{"type": "ACC", "value": 60}
+			],
+			"evalStats" : [
+				{"type": "SPD", "value": 1}
+			],
+			"requiredSets": [{"type": "VIOLENT", "value": 4}],
+			"brokenSet": true
+		}
+	]
+}

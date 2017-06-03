@@ -1,0 +1,77 @@
+{
+	name : "TeamGiant",
+	monsters: [
+		{
+			name: "Orochi",
+			requiredStats : [
+				{type: HP, value: 16000},
+				{type: SPD, value: 170},
+				{type: ATK, value: 1200},
+				{type: ACC, value: 60},
+				{type: CRATE, value: 85},
+				{type: CDMG, value: 100}
+			],
+			evalStats : [
+				{type: ATK, value: 1},
+				{type: SPD, value: 1},
+				{type: CDMG, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		},
+		{
+			name: "Bastet",
+			requiredStats : [
+				{type: HP, value: 17000},
+				{type: SPD, value: 150},
+				{type: ACC, value: 50}
+			],
+			evalStats : [
+				{type: HP, value: 1},
+				{type: SPD, value: 1}
+			],
+			requiredSets: [{type: DESPAIR, value: 4}],
+			brokenSet: false
+		},
+		{
+			name: "Bernard",
+			requiredStats : [
+				{type: HP, value: 17000},
+				{type: SPD, value: 180},
+				{type: ACC, value: 60}
+			],
+			evalStats : [
+				{type: SPD, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		},
+		{
+			name: "Belladeon",
+			requiredStats : [
+				{type: HP, value: 17000},
+				{type: SPD, value: 170},
+				{type: ACC, value: 60}
+			],
+			evalStats : [
+				{type: SPD, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		},
+		{
+			name: "Veromos",
+			requiredStats : [
+				{type: HP, value: 20000},
+				{type: SPD, value: 170},
+				{type: ACC, value: 60}
+			],
+			evalStats : [
+				{type: HP, value: 1},
+				{type: SPD, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		}
+	]
+}

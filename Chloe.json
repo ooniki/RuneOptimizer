@@ -1,0 +1,18 @@
+{
+	"name" : "Chloe",
+	"monsters": [
+		{
+			"name": "Chloe",
+			"requiredStats" : [
+				{"type": "HP", "value": 17000},
+				{"type": "SPD", "value": 170}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "SPD", "value": 1}
+			],
+			"requiredSets": [{"type": "SWIFT", "value": 4}],
+			"brokenSet": true
+		}
+	]
+}

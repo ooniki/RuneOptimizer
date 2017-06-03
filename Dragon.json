@@ -1,0 +1,74 @@
+{
+	name : "Dragon",
+	monsters: [
+		{
+			name: "Hwa",
+			requiredStats : [
+				{type: HP, value: 20000},
+				{type: SPD, value: 190},
+				{type: CRATE, value: 70},
+				{type: CDMG, value: 110}
+			],
+			evalStats : [
+				{type: ATK, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		},
+		{
+			name: "Vigor",
+			requiredStats : [
+				{type: HP, value: 25000},
+				{type: SPD, value: 190},
+				{type: CRATE, value: 70}
+			],
+			evalStats : [
+				{type: CDMG, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		},
+		{
+			name: "Belladeon",
+			requiredStats : [
+				{type: HP, value: 22000},
+				{type: SPD, value: 190},
+				{type: ACC, value: 60}
+			],
+			evalStats : [
+				{type: HP, value: 1},
+				{type: SPD, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		},
+		{
+			name: "Megan",
+			requiredStats : [
+				{type: HP, value: 20000},
+				{type: SPD, value: 190},
+				{type: ACC, value: 60}
+			],
+			evalStats : [
+				{type: HP, value: 1},
+				{type: SPD, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		},
+		{
+			name: "Veromos",
+			requiredStats : [
+				{type: HP, value: 22000},
+				{type: SPD, value: 190},
+				{type: ACC, value: 60}
+			],
+			evalStats : [
+				{type: HP, value: 1},
+				{type: SPD, value: 1}
+			],
+			requiredSets: [],
+			brokenSet: false
+		}
+	]
+}
