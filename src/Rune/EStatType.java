@@ -1,6 +1,6 @@
 package Rune;
 
-public enum StatType {
+public enum EStatType {
 	SPD,
 	ATK,
 	ATK_FLAT,
@@ -13,30 +13,30 @@ public enum StatType {
 	ACC,
 	RES;
 	
-	public static StatType fromMarkup(String markup) {
+	public static EStatType fromMarkup(String markup) {
 		switch (markup) {
 		case "SPD":
-			return StatType.SPD;
+			return EStatType.SPD;
 		case "ATK%":
-			return StatType.ATK;
+			return EStatType.ATK;
 		case "ATK flat":
-			return StatType.ATK_FLAT;
+			return EStatType.ATK_FLAT;
 		case "HP%":
-			return StatType.HP;
+			return EStatType.HP;
 		case "HP flat":
-			return StatType.HP_FLAT;
+			return EStatType.HP_FLAT;
 		case "DEF%":
-			return StatType.DEF;
+			return EStatType.DEF;
 		case "DEF flat":
-			return StatType.DEF_FLAT;
+			return EStatType.DEF_FLAT;
 		case "CDmg":
-			return StatType.CDMG;
+			return EStatType.CDMG;
 		case "CRate":
-			return StatType.CRATE;
+			return EStatType.CRATE;
 		case "ACC":
-			return StatType.ACC;
+			return EStatType.ACC;
 		case "RES":
-			return StatType.RES;
+			return EStatType.RES;
 		case "":
 			return null;
 		default:
@@ -45,24 +45,24 @@ public enum StatType {
 		}
 	}
 	
-	public static StatType fromMarkup2(String markup) {
+	public static EStatType fromMarkup2(String markup) {
 		switch (markup) {
 		case "SPD":
-			return StatType.SPD;
+			return EStatType.SPD;
 		case "ATK":
-			return StatType.ATK;
+			return EStatType.ATK;
 		case "HP":
-			return StatType.HP;
+			return EStatType.HP;
 		case "DEF":
-			return StatType.DEF;
+			return EStatType.DEF;
 		case "CDMG":
-			return StatType.CDMG;
+			return EStatType.CDMG;
 		case "CRATE":
-			return StatType.CRATE;
+			return EStatType.CRATE;
 		case "ACC":
-			return StatType.ACC;
+			return EStatType.ACC;
 		case "RES":
-			return StatType.RES;
+			return EStatType.RES;
 		case "":
 			return null;
 		default:

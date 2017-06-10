@@ -1,0 +1,36 @@
+{
+	"name" : "Betta",
+	"monsters": [
+		{
+			"name": "Betta",
+			"requiredStats" : [
+				{"type": "HP", "value": 18000},
+				{"type": "SPD", "value": 150},
+				{"type": "ACC", "value": 50}
+			],
+			"evalStats" : [
+				{"type": "SPD", "value": 1},
+				{"type": "HP", "value": 1}
+				
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		},
+		{
+			"name": "Mav",
+			"requiredStats" : [
+				{"type": "HP", "value": 18000},
+				{"type": "SPD", "value": 150},
+				{"type": "ACC", "value": 50}
+			],
+			"evalStats" : [
+				{"type": "SPD", "value": 1},
+				{"type": "HP", "value": 1}
+				
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		}
+
+	]
+}

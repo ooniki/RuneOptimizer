@@ -1,5 +1,5 @@
 package Rune;
-public enum RuneSet {
+public enum ERuneSet {
 	ENERGY,
 	FATAL,
 	BLADE,
@@ -26,9 +26,9 @@ public enum RuneSet {
 		return name().toLowerCase();
 	}
 	
-	public static RuneSet fromMarkup(String markup) {
+	public static ERuneSet fromMarkup(String markup) {
 		markup = markup.toLowerCase();
-		for (RuneSet entry : values()) {
+		for (ERuneSet entry : values()) {
 			if (entry.getMarkup().equals(markup)) {
 				return entry;
 			}

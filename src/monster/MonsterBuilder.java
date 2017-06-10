@@ -15,7 +15,7 @@ public class MonsterBuilder {
 			long masterId = obj.getLong("master_id");
 			long id = obj.getLong("id");
 			String name = obj.getString("name");
-			Attribute attribute = Attribute.fromMarkup(obj.getString("attribute").toLowerCase());
+			EAttribute attribute = EAttribute.fromMarkup(obj.getString("attribute").toLowerCase());
 			int stars = obj.getInt("stars");
 			int level = obj.getInt("level");
 			int hp = obj.getInt("b_hp");

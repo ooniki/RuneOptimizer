@@ -1,6 +1,6 @@
 package monster;
 
-public enum Attribute {
+public enum EAttribute {
 	DARK,
 	LIGHT,
 	WIND,
@@ -11,8 +11,8 @@ public enum Attribute {
 		return name().toLowerCase();
 	}
 	
-	public static Attribute fromMarkup(String markup) {
-		for (Attribute entry : values()) {
+	public static EAttribute fromMarkup(String markup) {
+		for (EAttribute entry : values()) {
 			if (entry.getMarkup().equals(markup)) {
 				return entry;
 			}

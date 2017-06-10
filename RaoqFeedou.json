@@ -1,0 +1,23 @@
+{
+	"name" : "Jun",
+	"monsters": [
+		{
+			"name": "Jun",
+			"requiredStats" : [
+				{"type": "HP", "value": 12000},
+				{"type": "SPD", "value": 130},
+				{"type": "CRATE", "value": 67},
+				{"type": "CDMG", "value": 90}
+			],
+			"evalStats" : [
+				{"type": "CRATE", "value": 1},
+				{"type": "CDMG", "value": 1}
+				
+			],
+			"requiredSets": [],
+			"brokenSet": false
+		}
+			
+
+	]
+}

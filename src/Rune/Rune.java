@@ -8,7 +8,7 @@ public class Rune {
 
 	private long id;
 	private long uniqueId;
-	private RuneSet set;
+	private ERuneSet set;
 	private int stars;
 	private int level;
 	private int slot;
@@ -17,7 +17,7 @@ public class Rune {
 	private Stat[] stats;
 
 	
-	public Rune(long id, long uniqueId, RuneSet set, int stars, int level, int slot, String monster, Stat[] stats) {
+	public Rune(long id, long uniqueId, ERuneSet set, int stars, int level, int slot, String monster, Stat[] stats) {
 		this.setId(id);
 		this.setUniqueId(uniqueId);
 		this.setSet(set);
@@ -71,8 +71,8 @@ public class Rune {
 	public long getUniqueId() { return uniqueId; }
 	public void setUniqueId(long uniqueId) { this.uniqueId = uniqueId; }
 
-	public RuneSet getSet() { return set; }
-	public void setSet(RuneSet set) { this.set = set; }
+	public ERuneSet getSet() { return set; }
+	public void setSet(ERuneSet set) { this.set = set; }
 
 	public int getStars() { return stars; }
 	public void setStars(int stars) { this.stars = stars; }

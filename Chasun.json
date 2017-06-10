@@ -5,14 +5,14 @@
 			"name": "Chasun",
 			"requiredStats" : [
 				{"type": "HP", "value": 25000},
-				{"type": "SPD", "value": 120},
+				{"type": "SPD", "value": 150},
 				{"type": "RES", "value": 80}
 			],
 			"evalStats" : [
 				{"type": "SPD", "value": 1}
 			],
-			"requiredSets": [{"type": "VIOLENT", "value": 4}],
-			"brokenSet": true
+			"requiredSets": [{"type": "SWIFT", "value": 4}],
+			"brokenSet": false
 		}
 	]
 }

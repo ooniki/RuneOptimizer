@@ -6,14 +6,14 @@ public class Monster {
 	private long id;
 	
 	private String name;
-	private Attribute attribute;
+	private EAttribute attribute;
 	
 	private int stars;
 	private int level;
 	
 	private MonsterStats monsterStats;
 	
-	public Monster(long masterId, long id, String name, Attribute attribute, int stars, int level, MonsterStats monsterStats) {
+	public Monster(long masterId, long id, String name, EAttribute attribute, int stars, int level, MonsterStats monsterStats) {
 		this.setMasterId(masterId);
 		this.setId(id);
 		this.setName(name);
@@ -38,8 +38,8 @@ public class Monster {
 	public String getName() { return name; }
 	public void setName(String name) { this.name = name; }
 
-	public Attribute getAttribute() { return attribute; }
-	public void setAttribute(Attribute attribute) { this.attribute = attribute; }
+	public EAttribute getAttribute() { return attribute; }
+	public void setAttribute(EAttribute attribute) { this.attribute = attribute; }
 
 	public int getStars() { return stars; }
 	public void setStars(int stars) { this.stars = stars; }

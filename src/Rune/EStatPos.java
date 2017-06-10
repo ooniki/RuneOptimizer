@@ -1,6 +1,6 @@
 package Rune;
 
-public enum StatPos {
+public enum EStatPos {
 	MAIN,
 	SUBMAIN,
 	SUB1,

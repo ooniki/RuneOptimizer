@@ -5,14 +5,14 @@ import org.codehaus.jettison.json.JSONObject;
 
 public class Stat {
 
-	private StatType type;
+	private EStatType type;
 	private int value;
-	private StatPos pos;
+	private EStatPos pos;
 	
 	private boolean enchanted;
 	private int enchantValue;
 
-	public Stat(StatType type, int value, StatPos pos, boolean enchanted, int enchantValue) {
+	public Stat(EStatType type, int value, EStatPos pos, boolean enchanted, int enchantValue) {
 		this.setType(type);
 		this.setValue(value);
 		this.setPos(pos);
@@ -25,7 +25,7 @@ public class Stat {
 		builder.append("pos: ").append(pos);
 		builder.append(", type: ").append(type);
 		builder.append(", value: ").append(value);
-		if (!(pos == StatPos.MAIN || pos == StatPos.SUBMAIN)) {
+		if (!(pos == EStatPos.MAIN || pos == EStatPos.SUBMAIN)) {
 			builder.append(", enchanted: ").append(enchanted);
 			builder.append(", enchantValue: ").append(enchantValue);
 		}
@@ -40,14 +40,14 @@ public class Stat {
 		return result;
 	}
 	
-	public StatType getType() { return type; }
-	public void setType(StatType type) { this.type = type; }
+	public EStatType getType() { return type; }
+	public void setType(EStatType type) { this.type = type; }
 
 	public int getValue() { return value; }
 	public void setValue(int value) { this.value = value; }
 
-	public StatPos getPos() { return pos; }
-	public void setPos(StatPos pos) { this.pos = pos; }
+	public EStatPos getPos() { return pos; }
+	public void setPos(EStatPos pos) { this.pos = pos; }
 	
 	public boolean isEnchanted() { return enchanted; }
 	public void setEnchanted(boolean enchanted) { this.enchanted = enchanted; }

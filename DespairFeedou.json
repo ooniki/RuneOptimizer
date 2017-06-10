@@ -1,0 +1,20 @@
+{
+	"name" : "DespairFeedou",
+	"monsters": [
+		{
+			"name": "Baretta",
+			"requiredStats" : [
+				{"type": "HP", "value": 15000},
+				{"type": "SPD", "value": 150},
+				{"type": "ACC", "value": 60}
+			],
+			"evalStats" : [
+				{"type": "HP", "value": 1},
+				{"type": "SPD", "value": 1},
+				{"type": "ACC", "value": 1}
+			],
+			"requiredSets": [{"type": "DESPAIR", "value": 4}],
+			"brokenSet": false
+		}
+	]
+}

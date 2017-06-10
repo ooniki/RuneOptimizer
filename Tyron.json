@@ -1,0 +1,30 @@
+{
+    "name": "Tyron",
+    "monsters": [
+        {
+            "name": "Tyron",
+            "requiredStats": [
+                {
+                    "type": "HP",
+                    "value": 15000
+                },
+                {
+                    "type": "SPD",
+                    "value": 150
+                },
+                {
+                    "type": "CRATE",
+                    "value": 70
+                }
+            ],
+            "evalStats": [
+                {
+                    "type": "ATK",
+                    "value": 1
+                }
+            ],
+            "requiredSets": [],
+            "brokenSet": false
+        }
+    ]
+}

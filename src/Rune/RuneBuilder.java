@@ -6,9 +6,9 @@ import org.codehaus.jettison.json.JSONObject;
 
 public class RuneBuilder {
 
-	public Stat buildStat(JSONObject obj, String prefix, StatPos type) throws JSONException {
+	public Stat buildStat(JSONObject obj, String prefix, EStatPos type) throws JSONException {
 		String typeString = obj.getString(prefix + "_t");
-		StatType statType = StatType.fromMarkup(typeString);
+		EStatType statType = EStatType.fromMarkup(typeString);
 		if (statType == null)
 			return null;
 		int statValue = obj.getInt(prefix + "_v");
@@ -29,21 +29,21 @@ public class RuneBuilder {
 	public Stat[] buildStats(JSONObject obj) throws JSONException {
 		int nbStats = 0;		
 		
-		Stat mainStat  = this.buildStat(obj, "m", StatPos.MAIN);
+		Stat mainStat  = this.buildStat(obj, "m", EStatPos.MAIN);
 		nbStats++;
-		Stat subMainStat  = this.buildStat(obj, "i", StatPos.SUBMAIN);
+		Stat subMainStat  = this.buildStat(obj, "i", EStatPos.SUBMAIN);
 		if (subMainStat != null)
 			nbStats++;
-		Stat s1Stat  = this.buildStat(obj, "s1", StatPos.SUB1);
+		Stat s1Stat  = this.buildStat(obj, "s1", EStatPos.SUB1);
 		if (s1Stat != null)
 			nbStats++;
-		Stat s2Stat  = this.buildStat(obj, "s2", StatPos.SUB2);
+		Stat s2Stat  = this.buildStat(obj, "s2", EStatPos.SUB2);
 		if (s2Stat != null)
 			nbStats++;
-		Stat s3Stat  = this.buildStat(obj, "s3", StatPos.SUB3);
+		Stat s3Stat  = this.buildStat(obj, "s3", EStatPos.SUB3);
 		if (s3Stat != null)
 			nbStats++;
-		Stat s4Stat  = this.buildStat(obj, "s4", StatPos.SUB4);
+		Stat s4Stat  = this.buildStat(obj, "s4", EStatPos.SUB4);
 		if (s4Stat != null)
 			nbStats++;
 		
@@ -80,7 +80,7 @@ public class RuneBuilder {
 			long id = obj.getLong("id");
 			long uniqueId = obj.getLong("unique_id");
 			String set = obj.getString("set");
-			RuneSet runeSet = RuneSet.fromMarkup(set.toLowerCase());
+			ERuneSet runeSet = ERuneSet.fromMarkup(set.toLowerCase());
 			int stars = obj.getInt("grade");
 			int level = obj.getInt("level");
 			int slot = obj.getInt("slot");

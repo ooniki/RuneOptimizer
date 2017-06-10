@@ -1,7 +1,7 @@
 package stuff;
 import Rune.Rune;
-import Rune.RuneSet;
-import Rune.StatType;
+import Rune.ERuneSet;
+import Rune.EStatType;
 
 public class Stuff {
 
@@ -12,7 +12,7 @@ public class Stuff {
 	public Stuff(Rune rune1, Rune rune2, Rune rune3, Rune rune4, Rune rune5, Rune rune6, int[] bonus) {
 		this.setRunes(new Rune[6]);
 		this.setBonus(bonus);
-		this.setSet(new char[RuneSet.values().length]);
+		this.setSet(new char[ERuneSet.values().length]);
 		this.runes[0] = rune1;
 		this.set[rune1.getSet().ordinal()]++;
 		this.runes[1] = rune2;
@@ -28,39 +28,39 @@ public class Stuff {
 	}
 	
 	public int computeBonusHp(int baseHp) {
-		int bonusBySet = (int) (baseHp * (this.set[RuneSet.ENERGY.ordinal()] / 2 * 0.15));
-		return this.bonus[StatType.HP_FLAT.ordinal()]  + (baseHp * this.bonus[StatType.HP.ordinal()] / 100) + bonusBySet;
+		int bonusBySet = (int) (baseHp * (this.set[ERuneSet.ENERGY.ordinal()] / 2 * 0.15));
+		return this.bonus[EStatType.HP_FLAT.ordinal()]  + (baseHp * this.bonus[EStatType.HP.ordinal()] / 100) + bonusBySet;
 	}
 	
 	public int computeBonusAtk(int baseAtk) {
-		int bonusBySet = (int) (baseAtk * (this.set[RuneSet.FATAL.ordinal()] / 4 * 0.35));
-		return this.bonus[StatType.ATK_FLAT.ordinal()]  + (baseAtk * this.bonus[StatType.ATK.ordinal()] / 100) + bonusBySet;
+		int bonusBySet = (int) (baseAtk * (this.set[ERuneSet.FATAL.ordinal()] / 4 * 0.35));
+		return this.bonus[EStatType.ATK_FLAT.ordinal()]  + (baseAtk * this.bonus[EStatType.ATK.ordinal()] / 100) + bonusBySet;
 	} 
 	
 	public int computeBonusDef(int baseDef) {
-		int bonusBySet = (int) (baseDef * (this.set[RuneSet.GUARD.ordinal()] / 2 * 0.15));
-		return this.bonus[StatType.DEF_FLAT.ordinal()]  + (baseDef * this.bonus[StatType.DEF.ordinal()] / 100) + bonusBySet;
+		int bonusBySet = (int) (baseDef * (this.set[ERuneSet.GUARD.ordinal()] / 2 * 0.15));
+		return this.bonus[EStatType.DEF_FLAT.ordinal()]  + (baseDef * this.bonus[EStatType.DEF.ordinal()] / 100) + bonusBySet;
 	}
 	
 	public int computeSpd(int baseSpd) {
-		int bonusBySet = (int) (baseSpd * (this.set[RuneSet.SWIFT.ordinal()] / 4) * 0.25);
-		return this.bonus[StatType.SPD.ordinal()] + bonusBySet;
+		int bonusBySet = (int) (baseSpd * (this.set[ERuneSet.SWIFT.ordinal()] / 4) * 0.25);
+		return this.bonus[EStatType.SPD.ordinal()] + bonusBySet;
 	}
 	
 	public int computeCrate() {
-		return this.bonus[StatType.CRATE.ordinal()] + ((this.set[RuneSet.BLADE.ordinal()] / 2) * 12);
+		return this.bonus[EStatType.CRATE.ordinal()] + ((this.set[ERuneSet.BLADE.ordinal()] / 2) * 12);
 	}
 	
 	public int computeCdmg() {
-		return this.bonus[StatType.CDMG.ordinal()] + ((this.set[RuneSet.RAGE.ordinal()] / 4) * 40);
+		return this.bonus[EStatType.CDMG.ordinal()] + ((this.set[ERuneSet.RAGE.ordinal()] / 4) * 40);
 	}
 	
 	public int computeRes() {
-		return this.bonus[StatType.RES.ordinal()] + ((this.set[RuneSet.ENDURE.ordinal()] / 2) * 20);
+		return this.bonus[EStatType.RES.ordinal()] + ((this.set[ERuneSet.ENDURE.ordinal()] / 2) * 20);
 	}
 	
 	public int computeAcc() {
-		return this.bonus[StatType.ACC.ordinal()] + ((this.set[RuneSet.FOCUS.ordinal()] / 2) * 20);
+		return this.bonus[EStatType.ACC.ordinal()] + ((this.set[ERuneSet.FOCUS.ordinal()] / 2) * 20);
 	}
 	
 	public Rune[] getRunes() { return runes; }
